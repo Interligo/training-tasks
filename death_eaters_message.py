@@ -63,8 +63,7 @@ def main():
             user_password = input('''
 Пожиратель пристально вгляделся в Вас.
 - В этом сумраке Вас просто не разглядеть... Я жду пароль: ''')
-            for login, password, text in cursor.execute('SELECT * FROM users_base WHERE login=?', (user_login,)):
-                print('Пароль из базы: ' + password)
+            for login, password, text in cursor.execute('SELECT * FROM users_base WHERE login=?', (user_login,)):                
                 old_user_message = text
                 if user_password == password:
                     user_message = input('''

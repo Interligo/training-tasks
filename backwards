@@ -1,0 +1,19 @@
+#!/bin/bash
+
+# Get word from the user
+echo "Введите слово."
+read word
+
+# Get the number of simbols in word
+simbols_count=${#word}
+
+# Reverse simbols of our word
+for ((i=simbols_count; i > -1; i--))
+do
+simbol_from_word=${word:$i:1}
+new_word+=$simbol_from_word
+done
+
+# Print word in reverse order
+echo "Из $word мы получили $new_word!"
+

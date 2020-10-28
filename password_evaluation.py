@@ -7,7 +7,7 @@ def password_evaluation():
  
     password_requirements = {'digits': 0, 'capital letters': 0}
  
-    if len(user_password) >= 8:
+    if len(user_password) >= 8 and user_password.isalnum():
         for symbol in user_password:
             if symbol.isdigit():
                 password_requirements['digits'] += 1
@@ -21,7 +21,7 @@ def password_evaluation():
         else:
             return 'Пароль отвечает всем требованиям безопасности.'
     else:
-        return 'Пароль должен состоять, как минимум, из 8-ми символов.'
+        return 'Пароль должен состоять, как минимум, из 8-ми алфавитных символов.'
 
 
 if __name__ == '__main__':

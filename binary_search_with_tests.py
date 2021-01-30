@@ -59,3 +59,7 @@ class TestBinarySearch(unittest.TestCase):
     index = bs.search_iterative(simple_list, item)
     self.assertEqual(expected_result, index)
     
+    
+if __name__ == '__main__':
+    unittest.main()
+    

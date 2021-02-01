@@ -1,0 +1,22 @@
+#!/bin/bash
+
+
+PLANET = "-"
+
+WHILE [$PLANET != "EXIT"]
+do
+  echo -n "Please enter the name of planet."
+  read PLANET
+  if [$PLANET != "EXIT"]
+    then
+      echo -n "The $PLANET has "
+      case $PLANET in
+        Mercury | Venus ) echo -n "none";;
+        Earth ) echo -n "one";;
+        Mars ) echo -n "two";;
+        Jupiter ) echo -n "seventy nine";;
+        *) echo -n "unknown";;
+      esac
+   echo " satellite(s)."
+   fi
+done        

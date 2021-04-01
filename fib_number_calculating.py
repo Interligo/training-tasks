@@ -11,7 +11,7 @@ def fibonacci_list(number: int) -> list:
     return list_of_elements_fib
 
 
-def fibonacci_recursion(number: int):
+def fibonacci_recursion(number: int) -> int:
     """Возвращает n-ый элемент последовательности чисел Фибоначчи."""
     number = int(number)
     if number <= 1:
@@ -19,7 +19,7 @@ def fibonacci_recursion(number: int):
     return fibonacci_recursion(number - 1) + fibonacci_recursion(number - 2)
 
 
-def fibonacci_generator(number: int):
+def fibonacci_generator(number: int) -> int:
     """Последовательно генерирует элементы последовательности чисел Фибоначчи до n-ого элемента."""    
     fib1 = fib2 = 1
     for _ in range(int(number)):

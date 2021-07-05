@@ -4,6 +4,7 @@ This repository contains various scripts, programs or just pieces of code that I
 
 I will maintain a list of the completed test tasks for easy navigating:
 
+0. Interview preparation [guide](https://github.com/Interligo/popular-questions-on-python-interview).
 1. [Script](https://github.com/Interligo/script-for-data-uploading-to-website) for getting an information from Airtable, saving data to Postres and uploading to a simple web-site on Django;
 2. [Script](https://github.com/Interligo/script-to-creating-sitemap) for creating a sitemap in xml-format;
 3. [Script](https://github.com/Interligo/script-to-get-logs) for getting logs from test-server;
